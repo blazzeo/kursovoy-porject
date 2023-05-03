@@ -39,7 +39,7 @@
         </button>
     </nav>
 
-    <nav class="md:hidden inset-o overflow-y-hidden flex flex-col justify-center items-center fixed top-0 z-10 -right-full h-full w-full duration-300 ease-in-out transition-all bg-[#343434]" id="menu" x-show="isOpen">
+    <nav class="md:hidden inset-o overflow-y-hidden flex flex-col justify-center items-center fixed top-0 z-10 -right-full h-full w-full duration-300 ease-in-out transition-all bg-[#343434]" id="menu">
         <ul class="flex flex-col justify-center items-center text-white font-Poppins font-bold text-4xl">
           <li class="py-8"><a href="index.html">Main</a></li>
           <li class="py-8"><a href="about-us.html">About</a></li>
@@ -58,20 +58,20 @@
     </section>
 
     <p class="text-red-500 font-Poppins text-center py-3 hidden" id="errorElement"></p>
-    <section class="w-72 lg:w-[800px] mx-auto flex justify-center items-center">
+    <main class="w-72 lg:w-[800px] mx-auto flex justify-center items-center">
         <form name="loginForm" class="justify-center lg:justify-between lg:flex-row flex-wrap flex flex-col">
             <input type="text" id="username" name="username" placeholder="Username" class="lg:my-4 font-Poppins bg-transparent mt-0 block w-full lg:w-[350px] px-0.5 border-0 border-b-2 border-gray-400 focus:ring-0 focus:border-gray-200 text-white"><br><br>
             <input type="password" id="password" name="password" placeholder="Password" class="lg:my-4 font-Poppins bg-transparent mt-0 block w-full lg:w-[350px] px-0.5 border-0 border-b-2 border-gray-400 focus:ring-0 focus:border-gray-200 text-white"><br><br>
             <button type="submit" id="submit" value="Log In" class="w-60 h-14 rounded-lg bg-blue-600 lg:my-4 text-white text-center hover:bg-blue-500 duration-150 mx-auto text-2xl" onclick="checkUser(event)">Log In</button>
         </form>
-    </section>
+    </main>
 
     <div class="mx-auto py-4">
         <p class="text-white text-center font-semibold text-4xl">Or</p>
         <p class="text-white text-center text-lg">Log in with...</p>
     </div>
 
-    <section class="max-w-sm md:max-w-3xl lg:max-w-screen-xl px-3 mx-auto py-4 flex justify-evenly items-center">
+    <div class="max-w-sm md:max-w-3xl lg:max-w-screen-xl px-3 mx-auto py-4 flex justify-evenly items-center">
         <a href="https://www.apple.com" class="border-2 border-white p-1 flex justify-center items-center duration-150 hover:bg-white/20 rounded-xl w-12 h-12 md:w-1/4 md:h-16">
             <img src="img/apple.svg" alt="Apple" class="md:pr-2">
             <p class="text-white text-xl hidden md:flex">Apple</p>
@@ -84,7 +84,7 @@
             <img src="img/google.svg" alt="Google" class="md:pr-2">
             <p class="text-white text-xl hidden md:flex">Google</p>
         </a>
-    </section>
+    </div>
 
     <p class="mx-auto py-4 text-white font-medium text-md text-center w-52">Don't have an account?<a class="text-blue-500" href="singup.html">Create One.</a></p>
 
@@ -97,7 +97,7 @@
             <a href="mailto:">info@marico.co</a>
         </div>
         <div class="text-white/40 hidden md:flex">
-            <a href="About.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">About</a>
+            <a href="about-us.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">About</a>
             <a href="pricing.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Pricing</a>
             <a href="blog.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Blog</a>
             <a href="login.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Sign in</a>
