@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="public/custom.css">
+    <link rel="icon" href="img/logo.svg" type="image/png">
+    <title>Marico</title>
+</head>
+<body class="bg-black w-screen h-ful font-Poppins p-0 m-0">
+    <nav class="max-w-screen-md lg:max-w-screen-xl px-3 md:max-w-screen-lg mx-auto flex justify-between z-10 overflow-visible items-center py-6">
+        <div class="z-20">
+            <a href="index.html" class="flex items-center">
+            <img src="img/logo.svg" alt="" class="scale-75 md:scale-100 lg:scale-100 xl:scale-100">
+            <h2 class="text-3xl text-white font-extrabold px-2">Marico</h2>
+            </a>
+        </div>
+        <div class="md:flex hidden">
+            <ul class="flex items-center">
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="index.html">Use Cases</a></li>
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="about-us.html">About</a></li>
+                <li class="font-medium px-4 transition-all text-blue-600">Pricing</li>
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="md:flex items-center hidden">
+            <a href="login.html" class="text-neutral-300 pr-5 transition-all hover:text-blue-600">Login</a>
+            <a href="singup.html" class="text-white rounded-md bg-blue-600 px-3 py-2 transition-all hover:bg-blue-500">Sing Up</a>
+        </div>
+        <button class="md:hidden z-20 flex flex-col justify-evenly items-center w-8 h-8 focus:outline-none" id="burger-btn">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+    </nav>
+
+    <nav class="md:hidden inset-o overflow-y-hidden flex flex-col justify-center items-center fixed top-0 z-10 -right-full h-full w-full duration-300 ease-in-out transition-all bg-[#343434]" id="menu" x-show="isOpen">
+        <ul class="flex flex-col justify-center items-center text-white font-Poppins font-bold text-4xl">
+          <li class="py-8"><a href="index.html">Main</a></li>
+          <li class="py-8"><a href="about-us.html">About</a></li>
+          <li class="py-8 text-blue-600">Pricing</li>
+          <li class="py-8"><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="flex justify-evenly text-4xl font-bold pt-12 w-full">
+            <a href="login.html" class="bg-white/75 text-center text-white py-2 min-w-[144px] rounded-xl">Log In</a>
+            <a href="singup.html" class="text-white text-center bg-blue-600 py-2 min-w-[144px] rounded-xl">Sign Up</a>
+        </div>
+      </nav>
+
+      <section class="flex flex-col mx-auto w-screen overflow-hidden justify-center items-center">
+        <h1 class="text-3xl mx-auto font-Poppins lg:text-6xl md:text-4xl py-10 font-bold text-white text-center">Choose the plan that's right for you.</h1>
+
+        <div class="pt-4 flex max-[940px]:flex-col max-[940px]:h-fit w-fit h-[560px]">
+            <div class="bg-[#131313] mx-2 max-[940px]:my-3 my-0 flex flex-col justify-between box-border border-2 h-full rounded-2xl p-2 md:p-5 border-[#707070] hover:bg-blue-500 hover:border-transparent transition-all duration-150 parent w-[300px]">
+                <div class="flex flex-col">
+                    <h2 class="text-white font-bold font-Poppins text-3xl pt-2">Starter</h2>
+                    <p class="text-white/50 font-Poppins">Perfect for tying out Wavium</p>
+                    <div class="h-28 py-4">                
+                        <h3 class="text-white font-bold font-Poppins text-5xl">Free</h3>
+                    </div>
+                    <p class="font-Poppins text-white font-bold">Collect Unlimited subscribers</p>
+                    <p class="font-Poppins text-white">500 monthly emails</p>
+                    <p class="text-white/50 font-Poppins text-center text-sm py-4">Upgrade to send more emails</p>
+                    <p class="font-semibold text-white font-Poppins">Key features</p>
+                    <div class="flex items-center py-1">
+                        <p class="pr-1">&#9989;</p>
+                        <p class="text-white font-Poppins text-md">Automatic updating home page</p>
+                    </div>
+                    <div class="flex items-center pt-1 pb-6">
+                        <p class="pr-1">&#9989;</p>
+                        <p class="text-white font-Poppins text-md">Unlimited sources + posts</p>
+                    </div>
+                </div>
+                <a href="singup.html" class="text-white font-Poppins py-4 w-full text-center rounded-xl border-blue-500 border-2 border-solid bg-transparent md:hover:bg-white md:hover:border-transparent md:hover:text-blue-500 transition-all duration-100 child">Start For Free</a>
+            </div>
+            <div class="bg-[#131313] mx-2 max-[940px]:my-3 my-0 flex flex-col justify-between box-border border-2 h-full rounded-2xl p-2 md:p-5 border-[#707070] hover:bg-blue-500 hover:border-transparent transition-all duration-75 parent w-[300px]">
+                <div class="flex flex-col">
+                    <h2 class="text-white font-bold font-Poppins text-3xl pt-2">Basic</h2>
+                    <p class="text-white/50 font-Poppins">Build your online home</p>
+                    <div class="h-28 py-4">
+                        <h3 class="text-white font-bold font-Poppins text-5xl pb-2">$14<span class="font-Poppins text-white/50 text-base font-normal px-1">Per month</span></h3>
+                        <p class="font-Poppins text-white/50 font-normal text-sm">or $19/mo, billed monthly</p>
+                    </div>
+                    <p class="font-Poppins text-white font-bold">Collect Unlimited subscribers</p>
+                    <p class="font-Poppins text-white">2,000 free monthl emails</p>
+                    <p class="text-white/50 font-Poppins text-center text-sm py-4">Purchase more for $0.002 per email</p>
+                    <p class="font-semibold text-white font-Poppins">Everything in starter, plus</p>
+                    <div class="flex items-center py-1">
+                        <p class="pr-1">&#9989;</p>
+                        <p class="text-white font-Poppins text-md">Remove Wavium branding</p>
+                    </div>
+                    <div class="flex items-center pt-1 pb-6">
+                    <p class="pr-1">&#9989;</p>
+                    <p class="text-white font-Poppins text-md">Embed Wavium on your own
+                        domain</p>
+                    </div>
+                </div>
+                <a href="singup.html" class="text-white font-Poppins py-4 w-full text-center rounded-xl border-blue-500 border-2 border-solid bg-transparent md:hover:bg-white md:hover:border-transparent md:hover:text-blue-500 transition-all duration-100 child">Start Free 14-day Trial</a>
+                <!-- <button class="text-white font-Poppins py-4 box-border mx-auto w-full text-center rounded-xl border-blue-500 border-2 border-solid bg-transparent transition-all duration-100 child">Start Free 14-day Trial</button> -->
+            </div>
+            <div class="bg-[#131313] mx-2 max-[940px]:my-3 my-0 flex flex-col justify-between box-border border-2 h-full rounded-2xl p-2 md:p-5 border-[#707070] hover:bg-blue-500 hover:border-transparent transition-all duration-75 parent w-[300px]">
+                <div class="flex flex-col">
+                    <h2 class="text-white font-bold font-Poppins text-3xl pt-2">Complete</h2>
+                    <p class="text-white/50 font-Poppins">Enhanced engagement</p>
+                    <div class="h-28 py-4">
+                        <h3 class="text-white font-bold font-Poppins text-5xl pb-2">$29<span class="font-Poppins text-white/50 text-base font-normal px-1">Per month</span></h3>
+                        <p class="font-Poppins text-white/50 font-normal text-sm">or $34/mo, billed monthly</p>
+                    </div>
+                    <p class="font-Poppins text-white font-bold">Collect Unlimited subscribers</p>
+                    <p class="font-Poppins text-white">10,000 free monthl emails</p>
+                    <p class="text-white/50 font-Poppins text-center text-sm py-4">Purchase more for $0.002 per email</p>
+                    <p class="font-semibold text-white font-Poppins">Everything in basic, plus</p>
+                    <div class="flex items-center py-1">
+                        <p class="pr-1">&#9989;</p>
+                        <p class="text-white font-Poppins text-md">Collect text massage subscribers</p>
+                    </div>
+                    <div class="flex items-center pt-1 pb-6">
+                    <p class="pr-1">&#9989;</p>
+                    <p class="text-white font-Poppins text-md">Share posts over text massage</p>
+                    </div>
+                </div>
+                <a href="singup.html" class="text-white font-Poppins py-4 w-full text-center rounded-xl border-blue-500 border-2 border-solid bg-transparent md:hover:bg-white md:hover:border-transparent md:hover:text-blue-500 transition-all duration-100 child">Start Free 14-day Trial</a>
+                <!-- <button class="text-white font-Poppins py-4 box-border mx-auto w-full text-center rounded-xl border-blue-500 border-2 border-solid bg-transparent transition-all duration-100 child">Start Free 14-day Trial</button> -->
+            </div>
+        </div>
+      </section>
+
+    <section class="flex flex-col justify-center items-center py-12">
+        <img src="img/logo.svg" alt="" class="p-3 scale-110 md:scale-150 lg:scale-[2] lg:p-7">
+        <p class="font-Poppins font-bold text-2xl text-white md:text-3xl lg:text-5xl md:py-4">Get Started Now</p>
+        <p class="text-white text-center text-xl lg:text-2xl">Setup is easy and takes under 5 minutes.</p>
+        <a href="pricing.html" class="text-white py-3 px-10 bg-blue-600 hover:bg-blue-500 transition-all duration-100 rounded-xl text-center my-4">Get Started Now</a>
+        <div class="flex items-center">
+            <div class="w-4 h-4 bg-green-500/20 animate-pulse flex justify-center items-center rounded-full relative"><div class="w-2 h-2 bg-green-600 rounded-full absolute inset-y-auto inset-x-auto"></div></div>
+            <p class="text-white/50 pl-1"><span class="text-white font-bold">1000+</span> creators have already started</p>
+        </div>
+    </section>
+
+    <footer class="container max-w-sm md:max-w-lg lg:max-w-screen-lg mx-auto flex justify-center items-center md:justify-between py-6 md:py-8">
+        <div class="text-white/40 flex flex-col justify-center items-center">
+            <div class="flex items-center">
+                <img src="img/logo.svg" alt="Marico" class="scale-75 -z-10">
+                <a href="index.html" class="font-extrabold text-white text-3xl">Marico</a>
+            </div>
+            <a href="mailto:">info@marico.co</a>
+        </div>
+        <div class="text-white/40 hidden md:flex">
+            <a href="About.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">About</a>
+            <a href="pricing.html" class=" font-medium px-4 transition-all text-blue-600">Pricing</a>
+            <a href="blog.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Blog</a>
+            <a href="login.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Sign in</a>
+        </div>
+    </footer>
+
+    <script src="js/burger.js" defer></script>
+    <script src="js/slider.js" defer></script>
+</body>
+</html>

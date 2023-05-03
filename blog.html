@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="public/custom.css">
+    <link rel="icon" href="img/logo.svg" type="image/png">
+    <title>Marico</title>
+</head>
+<body class="bg-black w-full h-full font-Poppins overflow-x-visible p-0 m-0">
+    <nav class="max-w-screen-md lg:max-w-screen-xl px-3 md:max-w-screen-lg mx-auto flex justify-between z-10 overflow-visible items-center py-6">
+        <div class="z-20">
+            <a href="index.html" class="flex items-center">
+            <img src="img/logo.svg" alt="" class="scale-75 md:scale-100 lg:scale-100 xl:scale-100">
+            <h2 class="text-3xl text-white font-extrabold px-2">Marico</h2>
+            </a>
+        </div>
+        <div class="md:flex hidden">
+            <ul class="flex items-center">
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="index.html">Use Cases</a></li>
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="about-us.html">About</a></li>
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="pricing.html">Pricing</a></li>
+                <li class="font-medium px-4 text-blue-600">Blog</li>
+            </ul>
+        </div>
+        <div class="md:flex items-center hidden">
+            <a href="login.html" class="text-neutral-300 pr-5 transition-all hover:text-blue-600">Login</a>
+            <a href="singup.html" class="text-white rounded-md bg-blue-600 px-3 py-2 transition-all hover:bg-blue-500">Sing Up</a>
+        </div>
+        <button class="md:hidden z-20 flex flex-col justify-evenly items-center w-8 h-8 focus:outline-none" id="burger-btn">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+    </nav>
+    
+    <nav class="md:hidden inset-o overflow-y-hidden flex flex-col justify-center items-center fixed top-0 z-10 -right-full h-full w-full duration-300 ease-in-out transition-all bg-[#343434]" id="menu" x-show="isOpen">
+        <ul class="flex flex-col justify-center items-center text-white font-Poppins font-bold text-4xl">
+          <li class="py-8"><a href="index.html">Main</a></li>
+          <li class="py-8"><a href="about-us.html">About</a></li>
+          <li class="py-8"><a href="pricing.html">Pricing</a></li>
+          <li class="py-8 text-blue-600">Blog</li>
+        </ul>
+        <div class="flex justify-evenly text-4xl font-bold pt-12 w-full">
+            <a href="login.html" class="bg-white/75 text-center text-white py-2 min-w-[144px] rounded-xl">Log In</a>
+            <a href="singup.html" class="text-white text-center bg-blue-600 py-2 min-w-[144px] rounded-xl">Sign Up</a>
+        </div>
+    </nav>
+
+    <header class="py-16">
+        <h1 class="text-4xl lg:text-6xl md:text-6xl xl:text-8xl pt-8 lg:pt-14 font-bold text-white text-center">Content Sources</h1>
+        <p class="text-white font-light text-center leading-8 text-2xl py-4">Connect these sources to your Marico homepage.</p>
+    </header>
+
+    <section class="max-w-2xl lg:max-w-screen-lg md:max-w-screen-md mx-auto flex flex-wrap justify-center">
+        <div class="border-2 border-white/50 w-72 p-4 m-2 rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-100 ease-linear">
+            <img src="img/Twitter_logo.svg" alt="">
+            <a href="https://twitter.com" class="font-semibold underline decoration-blue-500 underline-offset-2 decoration-2 leading-loose text-white text-xl">Twitter</a>
+            <p class="text-white/50">Connect your Twitter feed to
+                your Marico homepage.</p>
+        </div>
+        <div class="border-2 border-white/50 w-72 p-4 m-2 rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-100 ease-linear">
+            <img src="img/YouTube_logo.svg" alt="">
+            <a href="https://youtube.com" class="font-semibold underline decoration-blue-500 underline-offset-2 decoration-2 leading-loose text-white text-xl">YouTube</a>
+            <p class="text-white/50">Connect your YouTube feed to
+                your Marico homepage.</p>
+        </div>
+        <div class="border-2 border-white/50 w-72 p-4 m-2 rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-100 ease-linear">
+            <img src="img/Wordpress_logo.svg" alt="">
+            <a href="https://wordpress.org" class="font-semibold leading-loose underline underline-offset-2 decoration-blue-500 decoration-2  text-white text-xl">WordPress</a>
+            <p class="text-white/50">Connect your WordPress feed to
+                your Marico homepage.</p>
+        </div>
+        <div class="border-2 border-white/50 w-72 p-4 m-2 rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-100 ease-linear">
+            <img src="img/Substack_logo.svg" alt="">
+            <a href="https://substack.com" class="font-semibold leading-loose underline underline-offset-2 decoration-blue-500 decoration-2 text-white text-xl">Substack</a>
+            <p class="text-white/50">Connect your Substack feed to
+                your Marico homepage.</p>
+        </div>
+        <div class="border-2 border-white/50 w-72 p-4 m-2 rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-100 ease-linear">
+            <img src="img/Medium_logo.svg" alt="">
+            <a href="https://medium.com" class="font-semibold leading-loose underline underline-offset-2 decoration-blue-500 decoration-2 text-white text-xl">Medium</a>
+            <p class="text-white/50">Connect your Medium feed to
+                your Marico homepage.</p>
+        </div>
+        <div class="border-2 border-white/50 w-72 p-4 m-2 rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-100 ease-linear relative z-0">
+            <img src="img/Wordpress_logo.svg" alt="">
+            <a href="https://rss.com" class="font-semibold leading-loose underline underline-offset-2 decoration-blue-500 decoration-2 text-white text-xl">RSS Feeds</a>
+            <p class="text-white/50">Connect your RSS Feeds feed to
+                your Marico homepage.</p>
+                <p class="absolute top-2 right-2 py-1 px-3 text-blue-500 font-light bg-blue-600/30 text-center text-sm rounded-lg">Coming Soon</p>
+        </div>
+        <div class="border-2 border-white/50 w-72 p-4 m-2 rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-100 ease-linear">
+            <img src="img/Spotify_logo.svg" alt="">
+            <a href="https://open.spotify.com/" class="font-semibold underline underline-offset-2 decoration-blue-500 decoration-2 leading-loose text-white text-xl">Spotify</a>
+            <p class="text-white/50">Connect your Spotify feed to
+                your Marico homepage.</p>
+        </div>
+        <div class="border-2 border-white/50 w-72 p-4 m-2 rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-100 ease-linear">
+            <img src="img/Anchor_logo.svg" alt="">
+            <a href="https://www.anchorprotocol.com/" class="font-semibold underline underline-offset-2 decoration-blue-500 decoration-2 leading-loose text-white text-xl">Anchor</a>
+            <p class="text-white/50">Connect your Anchor feed to
+                your Marico homepage.</p>
+        </div>
+        <div class="border-2 border-white/50 w-72 p-4 m-2 rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-100 ease-linear">
+            <img src="img/Podcast_logo.svg" alt="">
+            <a href="https://www.apple.com/ru/apple-podcasts/" class="font-semibold underline underline-offset-2 decoration-blue-500 decoration-2 leading-loose text-white text-xl">Apple Podcasts</a>
+            <p class="text-white/50">Connect your Apple Podcasts feed to
+                your Marico homepage.</p>
+        </div>
+        <div class="border-2 border-white/50 w-72 p-4 m-2 rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-100 ease-linear relative z-0">
+            <img src="img/Instagram_logo.svg" alt="">
+            <a href="https://www.instagram.com/" class="font-semibold underline decoration-blue-500 underline-offset-2 decoration-2 leading-loose text-white text-xl">Instagram</a>
+            <p class="text-white/50">Connect your Instagram feed to
+                your Marico homepage.</p>
+                <p class="absolute top-2 right-2 py-1 px-3 text-blue-500 font-light bg-blue-600/30 text-center text-sm rounded-lg">Coming Soon</p>
+        </div>
+        <div class="border-2 border-white/50 w-72 p-4 m-2 rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-100 ease-linear relative z-0">
+            <img src="img/Linkedin_logo.svg" alt="">
+            <a href="https://ru.linkedin.com/" class="font-semibold underline decoration-blue-500 underline-offset-2 decoration-2 leading-loose text-white text-xl">LinkedIn</a>
+            <p class="text-white/50">Connect your LinkedIn feed to
+                your Marico homepage.</p>
+                <p class="absolute top-2 right-2 py-1 px-3 text-blue-500 font-light bg-blue-600/30 text-center text-sm rounded-lg">Coming Soon</p>
+        </div>
+        <div class="border-2 border-white/50 w-72 p-4 m-2 rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-100 ease-linear relative z-0">
+            <img src="img/Facebook_logo.svg" alt="">
+            <a href="https://www.facebook.com/" class="font-semibold underline decoration-blue-500 underline-offset-2 decoration-2 leading-loose text-white text-xl">Facebook</a>
+            <p class="text-white/50">Connect your Facebook feed to
+                your Marico homepage.</p>
+            <p class="absolute top-2 right-2 py-1 px-3 text-blue-500 font-light bg-blue-600/30 text-center text-sm rounded-lg">Coming Soon</p>
+        </div>
+    </section>
+
+    <section class="relative flex justify-center items-center my-12 overflow-y-hidden">
+        <img src="img/bg-people.png" alt="" class="w-full z-0">
+        <p class="text-white absolute inset-y-auto inset-x-auto font-bold text-2xl text-center font-Poppins md:text-3xl lg:text-5xl lg:w-3/4 z-10 w-4/5">We've helped over 1,000 creators to
+            claim control of their audience.</p>
+    </section>
+
+    <section class="flex flex-col justify-center items-center py-12">
+        <img src="img/logo.svg" alt="" class="p-3 scale-110 md:scale-150 lg:scale-[2] lg:p-7">
+        <p class="font-Poppins font-bold text-2xl text-white md:text-3xl lg:text-5xl md:py-4">Get Started Now</p>
+        <p class="text-white text-center text-xl lg:text-2xl">Setup is easy and takes under 5 minutes.</p>
+        <a href="pricing.html" class="text-white py-3 px-10 bg-blue-600 hover:bg-blue-500 transition-all duration-100 rounded-xl text-center my-4">Get Started Now</a>
+        <div class="flex items-center">
+            <div class="w-4 h-4 bg-green-500/20 animate-pulse flex justify-center items-center rounded-full relative"><div class="w-2 h-2 bg-green-600 rounded-full absolute inset-y-auto inset-x-auto"></div></div>
+            <p class="text-white/50 pl-1"><span class="text-white font-bold">1000+</span> creators have already started</p>
+        </div>
+    </section>
+
+    <footer class="container max-w-sm md:max-w-lg lg:max-w-screen-lg mx-auto flex justify-center items-center md:justify-between py-6 md:py-8">
+        <div class="text-white/40 flex flex-col justify-center items-center">
+            <div class="flex items-center">
+                <img src="img/logo.svg" alt="Marico" class="scale-75 -z-10">
+                <a href="index.html" class="font-extrabold text-white text-3xl">Marico</a>
+            </div>
+            <a href="mailto:">info@marico.co</a>
+        </div>
+        <div class="text-white/40 hidden md:flex">
+            <a href="About.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">About</a>
+            <a href="pricing.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Pricing</a>
+            <a href="blog.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Blog</a>
+            <a href="login.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Sign in</a>
+        </div>
+    </footer>
+
+    <script src="js/burger.js"></script>
+</body>
+</html>

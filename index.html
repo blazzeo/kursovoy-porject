@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="public/custom.css">
+    <link rel="icon" href="img/logo.svg" type="image/png">
+    <title>Marico</title>
+</head>
+<body class="bg-black w-full h-full font-Poppins overflow-x-visible p-0 m-0">
+    <nav class="max-w-screen-md lg:max-w-screen-xl px-3 md:max-w-screen-lg mx-auto flex justify-between z-10 overflow-visible items-center py-6">
+        <div class="z-20">
+            <a href="index.html" class="flex items-center">
+            <img src="img/logo.svg" alt="" class="scale-75 md:scale-100 lg:scale-100 xl:scale-100">
+            <h2 class="text-3xl text-white font-extrabold px-2">Marico</h2>
+            </a>
+        </div>
+        <div class="md:flex hidden">
+            <ul class="flex items-center">
+                <li class="font-medium px-4 text-blue-600">Use Cases</li>
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="about-us.html">About</a></li>
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="pricing.html">Pricing</a></li>
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="md:flex items-center hidden">
+            <a href="login.html" class="text-neutral-300 pr-5 transition-all hover:text-blue-600">Login</a>
+            <a href="singup.html" class="text-white rounded-md bg-blue-600 px-3 py-2 transition-all hover:bg-blue-500">Sing Up</a>
+        </div>
+        <button class="md:hidden z-20 flex flex-col justify-evenly items-center w-8 h-8 focus:outline-none" id="burger-btn">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+    </nav>
+    
+    <nav class="md:hidden inset-o overflow-y-hidden flex flex-col justify-center items-center fixed top-0 z-10 -right-full h-full w-full duration-300 ease-in-out transition-all bg-[#343434]" id="menu" x-show="isOpen">
+        <ul class="flex flex-col justify-center items-center text-white font-Poppins font-bold text-4xl">
+          <li class="py-8 text-blue-600">Main</li>
+          <li class="py-8"><a href="about-us.html">About</a></li>
+          <li class="py-8"><a href="pricing.html">Pricing</a></li>
+          <li class="py-8"><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="flex justify-evenly text-4xl font-bold pt-12 w-full">
+            <a href="login.html" class="bg-white/75 text-center text-white py-2 min-w-[144px] rounded-xl">Log In</a>
+            <a href="singup.html" class="text-white text-center bg-blue-600 py-2 min-w-[144px] rounded-xl">Sign Up</a>
+        </div>
+      </nav>
+
+    <header class="py-8 xl:py-16 container mx-auto">
+        <h1 class="text-4xl lg:text-6xl md:text-6xl xl:text-8xl font-bold text-white text-center">Own your audience.<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-300">So you don't lose them</span></h1>
+    </header>
+
+    <main class="container max-w-[310px] md:max-w-screen-md mx-auto flex flex-col justify-center items-center py-8 xl:py-16">
+        <p class="text-center font-medium text-white text-2xl xl:text-4xl w-4/5 md:w-9/12">Turn your audience into email and text message subscribers.</p>
+        <div class="flex flex-col lg:flex-row items-center justify-center pt-10">
+            <a href="singup.html" class="w-48 md:w-64 lg:w-56 py-3 md:py-4 my-2 mx-2 text-center text-white text-base box-border bg-blue-600 rounded-lg md:rounded-xl transition-all hover:bg-blue-500">Get Started Now</a>
+            <a href="singup.html" class="w-48 md:w-64 lg:w-56 py-3 md:py-4 my-2 mx-2 text-center text-white/50 text-base box-border bg-transparent rounded-lg md:rounded-xl border-white/50 border-2 hover:bg-white/25 transition-all">View A Demo</a>
+        </div>
+            <div class="flex items-center">
+                <div class="w-4 h-4 bg-green-500/20 animate-pulse flex justify-center items-center rounded-full relative"><div class="w-2 h-2 bg-green-600 rounded-full absolute inset-y-auto inset-x-auto"></div></div>
+                <p class="text-white/50 pl-1"><span class="text-white font-bold">1000+</span> creators have already started</p>
+            </div>
+    </main>
+
+    <section class="container justify-center items-center lg:flex lg:flex-col max-w-[300px] md:max-w-screen-sm lg:max-w-screen-xl mx-auto py-8 xl:py-16">
+        <p class="text-white font-semibold text-4xl text-center">Why Creators Love Marico</p>
+        <div class="items-baseline justify-center container lg:flex lg:justify-evenly">
+            <div class="py-3 justify-center items-center flex flex-col">
+                <div class="flex pt-4 items-center justify-center">
+                    <img src="img/smile_emoji.svg" alt="" class="pr-2">
+                    <p class="font-semibold text-2xl text-white">Reduced Anxiety</p>
+                </div>
+                <p class="text-white/50 text-xl font-light text-center max-w-xs lg:max-w-lg leading-8 pt-3">Never worry about losing your audience.</p>
+            </div>
+            <div class="py-3 justify-center items-center flex flex-col">
+                <div class="flex pt-4 items-center justify-center">
+                    <img src="img/happy_emoji.svg" alt="" class="pr-2">
+                    <p class="font-semibold text-2xl text-white">Lower Workload</p>
+                </div>
+                <p class="text-white/50 text-xl font-light text-center max-w-xs lg:max-w-lg leading-8 pt-3">Just share one link. We'll handle the rest.</p>
+            </div>
+            <div class="py-3 justify-center items-center flex flex-col">
+                <div class="flex pt-4 items-center justify-center">
+                    <img src="img/party_emoji.svg" alt="" class="pr-2">
+                    <p class="font-semibold text-2xl text-white">More Time</p>
+                </div>
+                <p class="text-white/50 text-xl font-light text-center max-w-xs lg:max-w-lg leading-8 pt-3">Spend less time on marketing tools.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container max-w-[300px] mx-auto md:max-w-screen-md lg:max-w-screen-lg justify-center items-center flex flex-col py-8 xl:py-16">
+        <p class="text-blue-600 text-sm text-center xl:text-lg">STEP 1</p>
+        <p class="text-white text-2xl lg:text-5xl font-semibold text-center pt-3">Connect Your Content</p>
+        <p class="text-white/50 mx-auto text-lg xl:text-2xl font-light text-center leading-8 lg:max-w-xl pt-3">Bring all of your content together and get a Homepage that
+            automatically updates whenever you create anywhere online.</p>
+        <a href="blog.html" class="w-60 md:w-64 lg:w-56 py-4 my-4 mx-2 font-medium text-md text-white/50 border-2 rounded-xl border-white/50 bg-transparent box-border text-center transition-all hover:bg-white/25">View Avaliable Sources</a>
+    </section>
+
+    <section class="w-screen overflow-y-visible overflow-x-hidden lg:max-w-screen-xl px-3 md:max-w-screen-lg mx-auto z-10 items-center py-8 xl:py-16 relative">
+        <img src="img/content-1.png" alt="" class="absolute top-14 md:w-[500px] xl:w-[700px] xl:-right-0 -right-4 -z-10 w-[300px]">
+        <p class="font-Poppins font-medium text-white md:text-3xl text-center md:text-left pb-56 lg:pb-20">Your Homepage</p>
+        <h2 class="text-3xl md:text-7xl text-center md:text-left text-white font-bold py-2">Your Content.<br>All in <span class="text-blue-500">One Spot</span></h2>
+        <ul class="list-none py-4">
+            <li class="font-Poppins text-white flex items-center py-1 flex-col justify-center md:justify-start md:flex-row">
+                <p class="w-8 h-8 rounded-full bg-white/20 flex justify-center items-center text-lg mr-1">1</p>
+                <p class="text-base text-center md:text-left md:text-xl py-2">Bring all of your content together into one homepage.</p>
+            </li>
+            <li class="font-Poppins text-white flex items-center py-1 flex-col justify-center md:justify-start md:flex-row">
+                <p class="w-8 h-8 rounded-full bg-white/20 flex justify-center items-center text-lg mr-1">2</p>
+                <p class="text-base text-center md:text-left md:text-xl py-2">Your page automatically updates whenever you create.</p>
+            </li>
+            <div class="flex flex-col md:flex-row items-center pt-10">
+                <a href="singup.html" class="w-44 md:w-52 lg:w-40 py-3 my-2 mx-2 text-center text-white text-base box-border bg-blue-600 rounded-xl transition-all hover:bg-blue-500">Get Started Now</a>
+                <a href="singup.html" class="w-44 md:w-52 lg:w-40 py-3 my-2 mx-2 text-center text-white/50 text-base box-border bg-transparent rounded-xl border-white/50 border-2 hover:bg-white/25 transition-all">View A Demo</a>
+            </div>
+        </ul>
+    </section>
+
+    <section class="container max-w-[300px] mx-auto md:max-w-screen-md lg:max-w-screen-lg justify-center items-center flex flex-col py-8 xl:py-16">
+        <p class="text-blue-600 text-sm text-md text-center xl:text-lg">STEP 2</p>
+        <p class="text-white text-2xl lg:text-5xl font-semibold text-center pt-3">Share Your Homepage</p>
+        <p class="text-white/50 mx-auto text-lg xl:text-3xl font-light text-center leading-8 lg:max-w-xl pt-3">Share your Wavium homepage link with your followers, and
+            we'll handle the rest.</p>
+    </section>
+
+    <section class="flex flex-col justify-center items-center">
+        <div class="flex flex-wrap justify-center items-center pb-6">
+            <div class="bg-[#1f1f1f] w-72 h-[283px] lg:h-[460px] mx-2 my-2 relative pt-3 pl-3 lg:pt-6 lg:pl-6 lg:w-[600px]">
+                <p class="font-Poppins text-green-500 text-xl lg:text-3xl">One Link</p>
+                <p class="text-gray-500 text-3xl lg:text-6xl font-semibold font-Poppins py-3 pb-10">ALL You Create.<br><span class="text-white font-Poppins">One Link</span></p>
+                <img src="img/mobile.svg" alt="" class="w-full lg:w-11/12 ml-auto">
+            </div>
+            <div class="bg-[#1f1f1f] w-72 h-[283px] lg:h-[460px] mx-2 my-2 relative pt-3 pl-3 lg:pt-6 lg:pl-6 lg:w-[600px]">
+                <p class="font-Poppins text-green-500 text-xl lg:text-3xl">Collect Subscribers</p>
+                <p class="text-gray-500 text-3xl lg:text-6xl font-semibold font-Poppins py-10 lg:py-20">Emails.<br>Phone #s.<br><span class="text-white font-Poppins">All Yours.</span></p>
+            </div>
+        </div>
+        <a href="singup.html" class="w-60 md:w-64 lg:w-56 py-4 my-2 mx-2 text-center text-white text-base box-border bg-blue-600 rounded-xl transition-all hover:bg-blue-500">Get Started Now</a>
+    </section>
+
+    <section class="container max-w-[300px] mx-auto md:max-w-screen-md lg:max-w-screen-lg justify-center items-center flex flex-col py-8 xl:py-16">
+        <p class="text-blue-600 text-sm text-md text-center xl:text-lg">STEP 3</p>
+        <p class="text-white text-2xl lg:text-5xl font-semibold text-center pt-3">Send Emails & Text Messages</p>
+        <p class="text-white/50 mx-auto text-lg xl:text-3xl font-light text-center leading-8 lg:max-w-xl pt-3">No more going through a social platform. Reach and engage
+            your audience directly over email and text massage.</p>
+    </section>
+
+    <section class="w-screen overflow-y-hidden overflow-x-hidden lg:max-w-screen-xl px-3 md:max-w-screen-lg mx-auto z-10 items-center py-8 xl:py-16 relative">
+        <img src="img/screen.png" alt="" class="absolute top-14 md:w-[500px] xl:w-[700px] xl:-right-0 -right-4 -z-10 w-[300px]">
+        <p class="font-Poppins font-medium text-white md:text-3xl text-center md:text-left pb-56 lg:pb-20">Create & Share</p>
+        <h2 class="text-3xl md:text-7xl text-center md:text-left text-white font-bold py-2">Reach Your<br>Audience<span class="text-blue-500">Directly.</span></h2>
+        <ul class="list-none py-4">
+            <li class="font-Poppins text-white flex items-center py-1 flex-col justify-center md:justify-start md:flex-row">
+                <p class="w-8 h-8 rounded-full bg-white/20 flex justify-center items-center text-lg mr-1">1</p>
+                <p class="text-base text-center md:text-left md:text-xl py-2">Embed content or create something new to share.</p>
+            </li>
+            <li class="font-Poppins text-white flex items-center py-1 flex-col justify-center md:justify-start md:flex-row">
+                <p class="w-8 h-8 rounded-full bg-white/20 flex justify-center items-center text-lg mr-1">2</p>
+                <p class="text-base text-center md:text-left md:text-xl py-2">Share content over email, text message or your homepage.</p>
+            </li>
+            <div class="flex flex-col md:flex-row items-center pt-10">
+                <a href="singup.html" class="w-44 md:w-52 lg:w-40 py-3 my-2 mx-2 text-center text-white text-base box-border bg-blue-600 rounded-xl transition-all hover:bg-blue-500">Get Started Now</a>
+                <a href="singup.html" class="w-44 md:w-52 lg:w-40 py-3 my-2 mx-2 text-center text-white/50 text-base box-border bg-transparent rounded-xl border-white/50 border-2 hover:bg-white/25 transition-all">View A Demo</a>
+            </div>
+        </ul>
+    </section>
+
+    <section class="relative flex justify-center items-center my-12 overflow-y-hidden">
+        <img src="img/bg-people.png" alt="" class="w-full z-0">
+        <p class="text-white absolute inset-y-auto inset-x-auto font-bold text-2xl text-center font-Poppins md:text-3xl lg:text-4xl lg:w-3/4 z-10 w-4/5">We've helped over 1,000 creators to
+            claim control of their audience.</p>
+    </section>
+
+    <section class="flex flex-col justify-center items-center py-12">
+        <img src="img/logo.svg" alt="" class="p-3 scale-110 md:scale-150 lg:scale-[2] lg:p-7">
+        <p class="font-Poppins font-bold text-2xl text-white md:text-3xl lg:text-5xl md:py-4">Get Started Now</p>
+        <p class="text-white text-center text-xl lg:text-2xl">Setup is easy and takes under 5 minutes.</p>
+        <a href="pricing.html" class="text-white py-3 px-10 bg-blue-600 hover:bg-blue-500 transition-all duration-100 rounded-xl text-center my-4">Get Started Now</a>
+        <div class="flex items-center">
+            <div class="w-4 h-4 bg-green-500/20 animate-pulse flex justify-center items-center rounded-full relative"><div class="w-2 h-2 bg-green-600 rounded-full absolute inset-y-auto inset-x-auto"></div></div>
+            <p class="text-white/50 pl-1"><span class="text-white font-bold">1000+</span> creators have already started</p>
+        </div>
+    </section>
+
+    <footer class="max-w-screen-md lg:max-w-screen-xl px-3 md:max-w-screen-lg mx-auto flex justify-between z-10 overflow-visible items-center py-6">
+        <div class="text-white/40 flex flex-col justify-center items-center">
+            <div class="flex items-center">
+                <img src="img/logo.svg" alt="Marico" class="scale-75 -z-10">
+                <a href="index.html" class="font-extrabold text-white text-3xl">Marico</a>
+            </div>
+            <a href="mailto:">info@marico.co</a>
+        </div>
+        <div class="text-white/40 hidden md:flex">
+            <a href="About.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">About</a>
+            <a href="pricing.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Pricing</a>
+            <a href="blog.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Blog</a>
+            <a href="login.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Sign in</a>
+        </div>
+    </footer>
+
+    <script src="js/burger.js"></script>
+</body>
+</html>

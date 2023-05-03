@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="public/custom.css">
+    <link rel="icon" href="img/logo.svg" type="image/png">
+    <title>Marico</title>
+</head>
+<body class="bg-black w-full h-full font-Poppins overflow-x-visible p-0 m-0 ">
+    <nav class="max-w-screen-md lg:max-w-screen-xl px-3 md:max-w-screen-lg mx-auto flex justify-between z-10 overflow-visible items-center py-6">
+        <div class="z-20">
+            <a href="index.html" class="flex items-center">
+            <img src="img/logo.svg" alt="" class="scale-75 md:scale-100 lg:scale-100 xl:scale-100">
+            <h2 class="text-3xl text-white font-extrabold px-2">Marico</h2>
+            </a>
+        </div>
+        <div class="md:flex hidden">
+            <ul class="flex items-center">
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="index.html">Use Cases</a></li>
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="about-us.html">About</a></li>
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="pricing.html">Pricing</a></li>
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="md:flex items-center hidden">
+            <a href="login.html" class="text-neutral-300 pr-5 transition-all hover:text-blue-600">Login</a>
+            <a href="singup.html" class="text-white rounded-md bg-blue-600 px-3 py-2 transition-all hover:bg-blue-500">Sing Up</a>
+        </div>
+        <button class="md:hidden z-20 flex flex-col justify-evenly items-center w-8 h-8 focus:outline-none" id="burger-btn">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+    </nav>
+    
+    <nav class="md:hidden inset-o overflow-y-hidden flex flex-col justify-center items-center fixed top-0 z-10 -right-full h-full w-full duration-300 ease-in-out transition-all bg-[#343434]" id="menu" x-show="isOpen">
+        <ul class="flex flex-col justify-center items-center text-white font-Poppins font-bold text-4xl">
+          <li class="py-8"><a href="index.html">Main</a></li>
+          <li class="py-8"><a href="about-us.html">About</a></li>
+          <li class="py-8"><a href="pricing.html">Pricing</a></li>
+          <li class="py-8"><a href="blog.html"> Blog</a></li>
+        </ul>
+        <div class="flex justify-evenly text-4xl font-bold pt-12 w-full">
+            <a href="login.html" class="bg-white/75 text-center text-white py-2 min-w-[144px] rounded-xl">Log In</a>
+            <a href="singup.html" class="text-white text-center bg-blue-600 py-2 min-w-[144px] rounded-xl">Sign Up</a>
+        </div>
+      </nav>
+
+    <section class="max-w-xs md:max-w-lg mx-auto md:flex md:flex-col py-10 justify-center items-center">
+        <h1 class="text-center text-white text-4xl font-semibold font-Poppins leading-10 pb-4">Sign up</h1>
+        <h3 class="text-center text-xl text-white font-Poppins leading-8">Fill all field for create an account.</h3>
+    </section>
+
+    <p class="text-red-500 font-Poppins text-center py-3 hidden" id="errorElement"></p>
+    <section class="w-72 lg:w-[800px] mx-auto flex justify-center">
+        <form name="loginForm" id="login-form" class="justify-center lg:justify-between lg:flex-row flex-wrap flex flex-col">
+            <input type="text" id="user" name="name" placeholder="Username" class="lg:my-4 font-Poppins bg-transparent mt-0 block w-full lg:w-[350px] px-0.5 border-0 border-b-2 border-gray-400 focus:ring-0 focus:border-gray-200 text-white"><br><br>
+            <input type="password" id="password" name="password" placeholder="Password" class="lg:my-4 font-Poppins bg-transparent mt-0 block w-full lg:w-[350px] px-0.5 border-0 border-b-2 border-gray-400 focus:ring-0 focus:border-gray-200 text-white"><br><br>
+            <input type="email" name="email" id="email" placeholder="Email Address" class="lg:my-4 font-Poppins bg-transparent mt-0 block w-full lg:w-[350px] px-0.5 border-0 border-b-2 border-gray-400 focus:ring-0 focus:border-gray-200 text-white"><br><br>
+            <button id="submit" onclick="verify(event)" class="w-60 h-14 rounded-lg bg-blue-600 lg:my-4 text-white text-center hover:bg-blue-500 duration-150 mx-auto text-2xl">Sign Up</button>
+        </form>
+    </section>
+
+    <div class="mx-auto py-4">
+        <p class="text-white text-center font-semibold text-4xl">Or</p>
+        <p class="text-white text-center text-lg">Sign up with...</p>
+    </div>
+
+    <section class="max-w-sm md:max-w-3xl lg:max-w-screen-xl px-3 mx-auto py-4 flex justify-evenly items-center">
+        <a href="https://www.apple.com" class="border-2 border-white p-1 flex justify-center items-center duration-150 hover:bg-white/20 rounded-xl w-12 h-12 md:w-1/4 md:h-16">
+            <img src="img/apple.svg" alt="Apple" class="md:pr-2">
+            <p class="text-white text-xl hidden md:flex">Apple</p>
+        </a>
+        <a href="https://www.facebook.com" class="border-2 border-white p-1 flex justify-center items-center duration-150 hover:bg-white/20 rounded-xl w-12 h-12 md:w-1/4 md:h-16">
+            <img src="img/fb.svg" alt="Facebook" class="md:pr-2">
+            <p class="text-white text-xl hidden md:flex">Facebook</p>
+        </a>
+        <a href="https://www.google.com" class="border-2 border-white p-1 flex justify-center items-center duration-150 hover:bg-white/20 rounded-xl w-12 h-12 md:w-1/4 md:h-16">
+            <img src="img/google.svg" alt="Google" class="md:pr-2">
+            <p class="text-white text-xl hidden md:flex">Google</p>
+        </a>
+    </section>
+
+    <p class="mx-auto py-4 text-white font-medium text-md text-center w-52">Already have an account? Please <a class="text-blue-500" href="login.html">Log in.</a></p>
+
+    <footer class="container max-w-sm md:max-w-lg lg:max-w-screen-lg mx-auto flex justify-center items-center md:justify-between py-6 md:py-8">
+        <div class="text-white/40 flex flex-col justify-center items-center">
+            <div class="flex items-center">
+                <img src="img/logo.svg" alt="Marico" class="scale-75 -z-10">
+                <a href="index.html" class="font-extrabold text-white text-3xl">Marico</a>
+            </div>
+            <a href="mailto:">info@marico.co</a>
+        </div>
+        <div class="text-white/40 hidden md:flex">
+            <a href="About.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">About</a>
+            <a href="pricing.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Pricing</a>
+            <a href="blog.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Blog</a>
+            <a href="login.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Sign in</a>
+        </div>
+    </footer>
+    
+    <script src="js/burger.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>

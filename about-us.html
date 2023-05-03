@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="public/custom.css">
+    <link rel="icon" href="img/logo.svg" type="image/png">
+    <title>Marico</title>
+</head>
+<body class="bg-black w-full h-full font-Poppins overflow-x-visible p-0 m-0">
+    <nav class="max-w-screen-md lg:max-w-screen-xl px-3 md:max-w-screen-lg mx-auto flex justify-between z-10 overflow-visible items-center py-6">
+        <div class="z-20">
+            <a href="index.html" class="flex items-center">
+            <img src="img/logo.svg" alt="" class="scale-75 md:scale-100 lg:scale-100 xl:scale-100">
+            <h2 class="text-3xl text-white font-extrabold px-2">Marico</h2>
+            </a>
+        </div>
+        <div class="md:flex hidden">
+            <ul class="flex items-center">
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="index.html">Use Cases</a></li>
+                <li class=" font-medium px-4 transition-al text-blue-600">About</li>
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="pricing.html">Pricing</a></li>
+                <li class="text-white/50 font-medium px-4 transition-all hover:text-blue-600"><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="md:flex items-center hidden">
+            <a href="login.html" class="text-neutral-300 pr-5 transition-all hover:text-blue-600">Login</a>
+            <a href="singup.html" class="text-white rounded-md bg-blue-600 px-3 py-2 transition-all hover:bg-blue-500">Sing Up</a>
+        </div>
+        <button class="md:hidden z-20 flex flex-col justify-evenly items-center w-8 h-8 focus:outline-none" id="burger-btn">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+    </nav>
+    
+    <nav class="md:hidden inset-o overflow-y-hidden flex flex-col justify-center items-center fixed top-0 z-10 -right-full h-full w-full duration-300 ease-in-out transition-all bg-[#343434]" id="menu" x-show="isOpen">
+        <ul class="flex flex-col justify-center items-center text-white font-Poppins font-bold text-4xl">
+          <li class="py-8"><a href="index.html">Main</a></li>
+          <li class="py-8 text-blue-600">About</li>
+          <li class="py-8"><a href="pricing.html">Pricing</a></li>
+          <li class="py-8"><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="flex justify-evenly text-4xl font-bold pt-12 w-full">
+            <a href="login.html" class="bg-white/75 text-center text-white py-2 min-w-[144px] rounded-xl">Log In</a>
+            <a href="singup.html" class="text-white text-center bg-blue-600 py-2 min-w-[144px] rounded-xl">Sign Up</a>
+        </div>
+      </nav>
+
+    <header class="container max-w-sm md:max-w-md flex flex-col justify-center items-center mx-auto py-8 lg:py-16">
+        <div class="flex items-center justify-center">
+            <img src="img/logo.svg" alt="" class="scale-75 md:scale-100 lg:scale-100 xl:scale-100">
+            <h2 class="text-3xl lg:text-4xl text-white font-extrabold px-2">Marico</h2>
+        </div>
+        <p class="text-blue-600 text-sm text-center uppercase font-semibold py-4 lg:py-6">Our Mission</p>
+        <h2 class="text-white sm:max-w-md font-semibold text-4xl text-center">We exist to help creators
+            own their audience.</h2>
+        <p class="text-white font-light text-center leading-6 text-md py-4">We believe that social platforms are taking advantage of creators.
+            We want to change that and help creators fight back. </p>
+    </header>
+
+    <section class="container max-w-[85vw] md:max-w-lg lg:max-w-2xl mx-auto py-4 border-b-2 border-white/30">
+        <p class="text-white font-light leading-6 text-md py-3 text-justify">Building a career on social platforms is like building a home on someone else's
+            land. While social platforms are great for discovering and reaching your audience,
+            your goal as a creator should be to convert your followers into email or text
+            message subscribers. Why? Look no further than TikTok. Almost overnight,
+            millions of creative people almost lost their careers. </p>
+        <p class="text-white font-light leading-6 text-md py-3 text-justify">If a platform removes your account, or their algorithm for distribution no longer
+            favours you, are you prepared? </p>
+        <p class="text-white font-light leading-6 text-md py-3 text-justify">If you want to build a career as a creator, your focus should be on building durable
+            distribution channels. Without distribution, you have no business. So how can you
+            build an audience that you actually own? With emails and phone numbers. These
+            distribution channels are direct. Instead of going through some algorithm, when
+            you share over email and text message, you know that your audience will see your
+            content. Even better is the fact that you own these lists. Instagram removes your
+            acount, you're ok. YouTube changes their algorithm, you're ok. You own your
+            audience. </p>
+        <p class="text-white font-light leading-6 text-md py-3 text-justify">We built Marico to make this process easy, fast, and effective. The traditional
+            solution to this problem involves spending days building a website or hiring
+            someone expensive to do it for you. But those days are gone. With Marico, you
+            get a portfolio that is always up-to-date and converts visitors into email or text
+            message subscribers. The best thing? It takes under 5 minutes to setup, and it
+            automatically updates whenever you post new content anywhere online. We
+            believe the best tools are the ones you don't even notice. Marico helps you build
+            your own audience, without any hassle or time commitment. All you have to do is
+            share your portfolio link with your audience, and we'll handle the rest. </p>
+        <p class="text-white font-light leading-6 text-md py-3 text-justify">You can also create posts from within Marico and share them in just a few clicks
+            to your portfolio, and to your email and text message subscribers. Since all of your
+            content is already in Marico, creating content takes minutes, not hours. </p>
+        <p class="text-white font-light leading-6 text-md py-3 text-justify">For too long, social platforms have taken advantage of creators. Fight back and
+            build an audience that you own. </p>
+        <p class="text-white font-bold leading-6 text-md py-3">- The Team Marico (Olivia, William, and Noah) </p>
+    </section>
+
+    <section class="container max-w-xs md:max-w-lg lg:max-w-2xl mx-auto flex flex-col justify-center py-8">
+        <p class="text-blue-600 text-sm text-center uppercase font-semibold py-4 lg:py-6">Our team</p>
+        <h2 class="text-white sm:max-w-md font-semibold text-4xl text-center mx-auto">We love creators</h2>
+        <div class="md:flex justify-between py-6">
+            <div class="justify-center flex flex-col py-3">
+                <img src="img/creator1.svg" alt="" class="w-9/12 md:w-28 lg:w-36 mx-auto">
+                <h2 class="text-white font-bold text-2xl text-center">Jacob Mark</h2>
+                <p class="text-white/50 font-light text-md text-center">CEO & Design</p>
+                <div class="flex justify-center items-center">
+                    <a href="https://twitter.com/" class="text-white text-md text-center">Twitter</a>
+                    <a href="https://twitter.com/"><img src="img/link.svg" alt="" class="h-3"></a>
+                </div>
+            </div>
+            <div class="justify-center flex flex-col py-3">
+                <img src="img/creator2.svg" alt="" class="w-9/12 md:w-28 lg:w-36 mx-auto">
+                <h2 class="text-white font-bold text-2xl text-center">Ryan Trump</h2>
+                <p class="text-white/50 font-light text-md text-center">COO & Sales</p>
+                <div class="flex justify-center items-center">
+                    <a href="https://twitter.com/" class="text-white text-md text-center">Twitter</a>
+                    <a href="https://twitter.com/"><img src="img/link.svg" alt="" class="h-3"></a>
+                </div>
+            </div>
+            <div class="justify-center flex flex-col py-3">
+                <img src="img/creator3.svg" alt="" class="w-9/12 md:w-28 lg:w-36 mx-auto">
+                <h2 class="text-white font-bold text-2xl text-center">Daniel</h2>
+                <p class="text-white/50 font-light text-md text-center">CTO & Development</p>
+                <div class="flex justify-center items-center">
+                    <a href="https://twitter.com/" class="text-white text-md text-center">Twitter</a>
+                    <a href="https://twitter.com/"><img src="img/link.svg" alt="" class="h-3"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col justify-center items-center py-12">
+        <img src="img/logo.svg" alt="" class="p-3 scale-110 md:scale-150 lg:scale-[2] lg:p-7">
+        <p class="font-Poppins font-bold text-2xl text-white md:text-3xl lg:text-5xl md:py-4">Get Started Now</p>
+        <p class="text-white text-center text-xl lg:text-2xl">Setup is easy and takes under 5 minutes.</p>
+        <a href="pricing.html" class="text-white py-3 px-10 bg-blue-600 hover:bg-blue-500 transition-all duration-100 rounded-xl text-center my-4">Get Started Now</a>
+        <div class="flex items-center">
+            <div class="w-4 h-4 bg-green-500/20 animate-pulse flex justify-center items-center rounded-full relative"><div class="w-2 h-2 bg-green-600 rounded-full absolute inset-y-auto inset-x-auto"></div></div>
+            <p class="text-white/50 pl-1"><span class="text-white font-bold">1000+</span> creators have already started</p>
+        </div>
+    </section>
+
+    <footer class="container max-w-sm md:max-w-lg lg:max-w-screen-lg mx-auto flex justify-center items-center md:justify-between py-6 md:py-8">
+        <div class="text-white/40 flex flex-col justify-center items-center">
+            <div class="flex items-center">
+                <img src="img/logo.svg" alt="Marico" class="scale-75 -z-10">
+                <a href="index.html" class="font-extrabold text-white text-3xl">Marico</a>
+            </div>
+            <a href="mailto:">info@marico.co</a>
+        </div>
+        <div class="text-white/40 hidden md:flex">
+            <a href="About.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">About</a>
+            <a href="pricing.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Pricing</a>
+            <a href="blog.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Blog</a>
+            <a href="login.html" class="text-white/50 font-medium px-4 transition-all hover:text-blue-600">Sign in</a>
+        </div>
+    </footer>
+
+    <script src="js/burger.js"></script>
+</body>
+</html>
