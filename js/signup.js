@@ -23,7 +23,7 @@ function verify() {
       body: JSON.stringify(newUser), // преобразуем объект JavaScript в JSON-строку и передаем в теле запроса
     })
       .then((response) => response.json()) // преобразуем ответ от сервера в объект JavaScript
-      .then((data) => console.log(data)) // выводим полученные данные в консоль
+      .then((data) => window.location.href = '..index.html') // выводим полученные данные в консоль
       .catch((error) => console.error(error)); // обрабатываем ошибки
   }
 }

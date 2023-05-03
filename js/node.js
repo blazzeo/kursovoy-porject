@@ -41,9 +41,9 @@ app.post('/signup', (req, res) => {
     fs.writeFile('../users.xml', newXML, (err) => {
       if (err) throw err;
       console.log('Новый пользователь добавлен в файл');
-
       // Если все прошло успешно, отправляем ответ клиенту
-      return res.status(200).send('Файл успешно обновлен');
+      // return res.status(200).send('Файл успешно обновлен');
+      res.json({ success: true });
     });
   });
 });

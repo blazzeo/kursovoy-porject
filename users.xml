@@ -25,4 +25,49 @@
     <password>vavssdfhgdgs</password>
     <email>vad@vsav</email>
   </user>
+  <user>
+    <username>testUser</username>
+    <password>1234124523561</password>
+    <email>testuser@example.com</email>
+  </user>
+  <user>
+    <username>asdfsafa</username>
+    <password>gasfsdgadgsdva</password>
+    <email>sadgssa@fasdva</email>
+  </user>
+  <user>
+    <username>dfgdgzdga</username>
+    <password>sdgbfgsadfbgwa</password>
+    <email>sgsg@fgadg</email>
+  </user>
+  <user>
+    <username>124354tafas</username>
+    <password>vbdsasfDGvbvzdbzad</password>
+    <email>agfas@fgvdzsg</email>
+  </user>
+  <user>
+    <username>safsfs</username>
+    <password>wfgasffasvavfasv</password>
+    <email>gabva@fvaba</email>
+  </user>
+  <user>
+    <username>zdfgdsF</username>
+    <password>gadsFgagFvsvadbad</password>
+    <email>gabasdaf@gagg</email>
+  </user>
+  <user>
+    <username>vsfsavs</username>
+    <password>sagvxfasgvsavFa</password>
+    <email>vsafsva@vbad</email>
+  </user>
+  <user>
+    <username>asfgsadfsfafa</username>
+    <password>vsfagvsgvabvsv</password>
+    <email>savsF@vzfS</email>
+  </user>
+  <user>
+    <username>sagsdvsfas</username>
+    <password>fvasfgavsfgava</password>
+    <email>asbvas@fvasa</email>
+  </user>
 </users>
